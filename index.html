@@ -1,134 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>S82 Mock Technical Exam (App Building 2)</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>S82 Mock Technical Exam (App Building 2)</title>
 
-  <!-- Icons and Bootstrap -->
-  <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
+    <!-- Icons and Bootstrap -->
+    <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
 
-  <!-- Hero Banner -->
-<header
-  class="text-white text-center py-5"
-  style="
-    background-image: url('https://static.vecteezy.com/system/resources/previews/020/626/920/non_2x/digitization-process-from-books-to-ebooks-from-paper-to-digital-in-a-laptop-photo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  "
->
-  <div class="container-fluid bg-dark bg-opacity-75 py-5">
-    <h1 class="display-4 fw-bold">SineskwelaPH</h1>
-    <p class="lead">Your go-to hub for educational resources and inspiration</p>
-    <a href="#categories-section" class="btn btn-light btn-lg mt-3">Browse Subjects</a>
-  </div>
-</header>
-
-  <!-- Featured Section -->
-  <section id="featured" class="py-5 bg-light">
-    <div class="container">
-      <div class="row text-center mb-4">
-        <h2 class="fw-bold">Featured Resources</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title"><i class="uil uil-star text-warning me-2"></i>Weekly Picks</h5>
-              <p class="card-text">Explore this week’s top-rated learning tools.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title"><i class="uil uil-thumbs-up text-success me-2"></i>Editor's Choice</h5>
-              <p class="card-text">Handpicked resources for deep understanding.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title"><i class="uil uil-clock text-info me-2"></i>New Additions</h5>
-              <p class="card-text">Fresh content updated every Monday.</p>
-            </div>
-          </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SineskwelaPH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categories-section">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Categories Section -->
-  <section id="categories-section" class="py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Browse by Subject</h2>
-      <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-        <span class="badge rounded-pill bg-primary px-4 py-2">Math</span>
-        <span class="badge rounded-pill bg-success px-4 py-2">Science</span>
-        <span class="badge rounded-pill bg-danger px-4 py-2">English</span>
-        <span class="badge rounded-pill bg-warning text-dark px-4 py-2">Filipino</span>
-        <span class="badge rounded-pill bg-info text-dark px-4 py-2">MAPEH</span>
-        <span class="badge rounded-pill bg-dark px-4 py-2">Araling Panlipunan</span>
+    <!-- Home Section -->
+    <section id="home">
+      <!-- Hero Banner -->
+      <header
+        class="text-white text-center py-5"
+        style="background-image: url('https://static.vecteezy.com/system/resources/previews/020/626/920/non_2x/digitization-process-from-books-to-ebooks-from-paper-to-digital-in-a-laptop-photo.jpg');
+               background-size: cover;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-attachment: fixed;"
+      >
+        <div class="container-fluid bg-dark bg-opacity-75 py-5">
+          <h1 class="display-4 fw-bold">SineskwelaPH</h1>
+          <p class="lead">Your go-to hub for educational resources and inspiration</p>
+          <a href="#categories-section" class="btn btn-light btn-lg mt-3">Browse Subjects</a>
+        </div>
+      </header>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-5 text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Welcome to SineskwelaPH</h2>
+        <p class="mx-auto" style="max-width: 700px;">An educational platform designed to empower learners by providing curated, engaging, and easy-to-access resources across subjects.</p>
       </div>
+    </section>
 
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title">Intermediate Algebra</h5>
-              <p class="card-text text-muted">Solve and graph linear, quadratic, and exponential functions.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Start Computations</a>
+    <!-- Featured Section -->
+    <section id="featured" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <h2 class="fw-bold">Featured Resources</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title"><i class="uil uil-star text-warning me-2"></i>Weekly Picks</h5>
+                <p class="card-text">Explore this week's top-rated learning tools.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title">Life and Sciences</h5>
-              <p class="card-text text-muted">Describe and explain core concepts in life, physical, and earth sciences.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">View Documents</a>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title"><i class="uil uil-thumbs-up text-success me-2"></i>Editor's Choice</h5>
+                <p class="card-text">Handpicked resources for deep understanding.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title">English Learning</h5>
-              <p class="card-text text-muted">Communicate ideas clearly in spoken and written English.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Practice English</a>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title"><i class="uil uil-clock text-info me-2"></i>New Additions</h5>
+                <p class="card-text">Fresh content updated every Monday.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-light py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-3">Our Mission</h2>
-      <p class="mx-auto mb-4" style="max-width: 600px;">
-        SineskwelaPH exists to make quality educational resources freely accessible and
-        engaging for learners of all ages.
-      </p>
-      <h5 class="fw-semibold">Get in Touch</h5>
-      <p>Email: <a href="mailto:hello@sineskwelaph.edu">hello@sineskwelaph.edu</a></p>
-      <p>Phone: (123) 456-7890</p>
-    </div>
-  </section>
+    <!-- Categories Section -->
+    <section id="categories-section" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Browse by Subject</h2>
+        <div id="categories" class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+          <span class="badge rounded-pill bg-primary px-4 py-2">Math</span>
+          <span class="badge rounded-pill bg-success px-4 py-2">Science</span>
+          <span class="badge rounded-pill bg-danger px-4 py-2">English</span>
+          <span class="badge rounded-pill bg-warning text-dark px-4 py-2">Filipino</span>
+          <span class="badge rounded-pill bg-info text-dark px-4 py-2">MAPEH</span>
+          <span class="badge rounded-pill bg-dark px-4 py-2">Araling Panlipunan</span>
+        </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 SineskwelaPH. All rights reserved.</p>
-  </footer>
+        <div id="resources" class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Intermediate Algebra</h5>
+                <p class="card-text text-muted">Solve and graph linear, quadratic, and exponential functions.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Start Computations</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Life and Sciences</h5>
+                <p class="card-text text-muted">Describe and explain core concepts in life, physical, and earth sciences.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm">View Documents</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title">English Learning</h5>
+                <p class="card-text text-muted">Communicate ideas clearly in spoken and written English.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Practice English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5 text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3">About Us</h2>
+        <p class="mx-auto mb-4" style="max-width: 600px;">
+          SineskwelaPH exists to make quality educational resources freely accessible and engaging for learners of all ages.
+        </p>
+        <h5 id="mission" class="fw-semibold">Our Mission</h5>
+        <p class="mb-4">To provide high-quality, engaging, and accessible learning tools to Filipino students nationwide.</p>
+        <h5 id="contact" class="fw-semibold">Get in Touch</h5>
+        <p>Email: <a href="mailto:hello@sineskwelaph.edu">hello@sineskwelaph.edu</a></p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 SineskwelaPH. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
